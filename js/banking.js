@@ -7,8 +7,11 @@ document.getElementById('deposite').addEventListener('click', function(){
 
     const depositeTotal = document.getElementById('deposite-total');
 
+    const currentAmount = depositeTotal.innerText;
+    const newdeposite  = parseFloat(currentAmount) + parseFloat(amount);
 
-    depositeTotal.innerText = amount;
+
+    depositeTotal.innerText = newdeposite;
 
     //clear the deposite input 
     deposite.value = '';
